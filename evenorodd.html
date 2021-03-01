@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style = "text-align: center; font-size: 20px;background-color: lightsteelblue;">
+<h1 style="color: brown;">TO FIEND EVEN OR ODD NUMBER </h1>
+Enter a number: <input id = "num">
+<br><br>
+<button onclick = "evenornot()"> check </button>
+<p id = "res"></p>
+<script>
+    let evenornot = () =>{
+var num = document.getElementById("num").value;
+if(num%2==0)
+document.getElementById("res").innerHTML = "even number" ;
+else
+document.getElementById("res").innerHTML = "odd number" ;
+    };
+</script>
+</body>
+</html>

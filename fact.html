@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title style="color: aqua; text-align: center; font-style: initial;"> Factorial of Number </title>
+</head>
+<body style="align-items: center;text-align: center;background-color: lightblue;">
+<h1> Factorial of Given Number</h1>
+<h2> Enter the number</h2>
+<input type = "number" min = "1" id = "num">
+<button type = "button" onclick = "submit()" > Submit </button>
+<h3> Factorial: <span id = "answer"> </span> </h3>
+<script>
+submit = () =>
+{
+var num = parseInt( document.getElementById("num").value);
+let f=1;
+var i;
+for(i = 1; i <= num; i++)  
+{
+f = f * i;
+}
+i=i-1
+if( isNaN(num) )
+{
+alert( " Enter valid number " );
+return;
+}
+document.getElementById("answer").innerHTML = f;
+}
+</script>
+</body>
+</html>
